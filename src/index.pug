@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(http-equiv="Cache-Control" content="no-cache")
+    meta(http-equiv="cleartype" content="on")
+    title CAlc
+    link(rel='stylesheet', href='css/style.css')
+
+body
+
+    section.calc#calc
+        .calc_wrapper
+            .calc_screen_field.clear
+            .calc_btn_number
+                button.btn_clear C
+                button.btn_default.btn_number 1
+                button.btn_default.btn_number 2
+                button.btn_default.btn_number 3
+                button.btn_default.btn_number 4
+                button.btn_default.btn_number 5
+                button.btn_default.btn_number 6
+                button.btn_default.btn_number 7
+                button.btn_default.btn_number 8
+                button.btn_default.btn_number 9
+                button.btn_default.btn_number 0
+                button.btn_default.btn_operation.btn_operation_equated =
+            .calc_btn_operation
+                button.btn_default.btn_operation.btn_operation_plus +
+                button.btn_default.btn_operation.btn_operation_minus -
+                button.btn_default.btn_operation.btn_operation_multiply *
+                button.btn_default.btn_operation.btn_operation_divided /
+
+    script(src="js/app.js")

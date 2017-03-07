@@ -1,0 +1,128 @@
+@import "modules/normalize";
+@import "modules/mixins";
+
+
+
+* {  @include box-sizing(); }
+
+
+html,body{
+  height:100%;
+}
+
+body{
+  margin: 0 auto;
+  max-width: 100%;
+  background: #fff;
+  font-size: 1em;
+}
+
+button{
+  outline: none;
+  &:focus{
+    outline: none;
+  }
+}
+input{
+  outline: none;
+  &:focus{
+    outline: none;
+  }
+}
+.clear:before,
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.clear:after {
+  clear: both;
+}
+.clear {
+  zoom: 1;
+}
+section{
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  background: #c1c8cb;
+}
+
+
+
+.calc_wrapper{
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgb(168, 76, 197);
+}
+.calc_screen_field{
+  width: 100%;
+  height: 40px;
+  padding: 10px 15px 0 ;
+  border: 1px solid #487849;
+  border-radius: 3px ;
+  color: #4f2db5;
+  font-size: 20px;
+  background:  #97d898;
+}
+.calc_btn_number{
+float: left;
+  width: 70%;
+  padding: 10px  0 10px 0;
+  .btn_default,.btn_clear{
+    width: 31.333%;
+  }
+}
+.calc_btn_operation{
+  padding: 10px 0 0 0 ;
+float: left;
+  width: 30%;
+  .btn_operation{
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 10px 0;
+    &:hover{
+      background: #96ac3b;
+    }
+  }
+}
+.btn_default,.btn_clear{
+  top:0;
+  position: relative;
+  display: inline-block;
+  background: #e4d8c0;
+  border: none;
+  border-radius: 3px;
+  transition: 0.2s ease 0s;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+  color: blue;
+  font-size: 20px;
+  &:hover{
+    background: #ffb72e;
+    transition: 0.4s ease 0s;
+  }
+  &:active{
+    box-shadow: 0 0 #6b54d3;
+    top: 4px;
+    transition: 0.3s ease 0s;
+  }
+}
+.btn_clear,.btn_operation {
+  background: #bad145;
+}
+.btn_number,.btn_clear,.btn_operation_equated{
+  margin: 0 5px 10px 0;
+  padding: 10px 0;
+}
+
+
+
